@@ -543,7 +543,7 @@ function App() {
               {/* <!-- /SideBar --> */}
             </div>
             </div>
-            </session>
+            </section>
 
         {/* <!-- shop-area end --> */}
         </main>
