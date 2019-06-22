@@ -34,7 +34,7 @@ export default function ProductList() {
                                 <div className="sidebar-shop">
                                     <div className="shop-widget">
                                         <h3 className="shop-title">Search by</h3>
-                                        <form action="#" className="shop-search">
+                                        <form action="_blank" className="shop-search">
                                             <input type="text" placeholder="Your keyword...." />
                                             <button><i className="fa fa-search"></i></button>
                                         </form>
@@ -51,11 +51,11 @@ export default function ProductList() {
                                     <div className="shop-widget">
                                         <h3 className="shop-title">SHOP BY</h3>
                                         <ul className="shop-link">
-                                            <li><a href="#">Name: A-Z</a></li>
-                                            <li><a href="#">Name: Z-A</a></li>
-                                            <li><a href="#">Price: High to Low</a></li>
-                                            <li><a href="#">Price: Low to High</a></li>
-                                            <li><a href="#">Product: Top Sales</a></li>
+                                            <li><a href="_blank">Name: A-Z</a></li>
+                                            <li><a href="_blank">Name: Z-A</a></li>
+                                            <li><a href="_blank">Price: High to Low</a></li>
+                                            <li><a href="_blank">Price: Low to High</a></li>
+                                            <li><a href="_blank">Product: Top Sales</a></li>
                                         </ul>
                                     </div>
 
@@ -64,7 +64,7 @@ export default function ProductList() {
                                         <ul className="shop-sidebar-product">
                                             <li>
                                                 <div className="side-pro-img">
-                                                    <a href="#"><img src="./assets/shop-rsp3.jpg" alt="" /></a>
+                                                    <a href="_blank"><img src="./assets/shop-rsp3.jpg" alt="" /></a>
                                                 </div>
                                                 <div className="side-pro-content">
                                                     <div className="side-pro-rating">
@@ -74,7 +74,7 @@ export default function ProductList() {
                                                         <i className="fas fa-star"></i>
                                                         <i className="fas fa-star"></i>
                                                     </div>
-                                                    <h5><a href="#">Raglan Baseball-Style</a></h5>
+                                                    <h5><a href="_blank">Raglan Baseball-Style</a></h5>
                                                     <div className="side-pro-price">
                                                         <span>$119.00 USD</span>
                                                     </div>
@@ -82,7 +82,7 @@ export default function ProductList() {
                                             </li>
                                             <li>
                                                 <div className="side-pro-img">
-                                                    <a href="#"><img src="./assets/shop-rsp2.jpg" alt="" /></a>
+                                                    <a href="_blank"><img src="./assets/shop-rsp2.jpg" alt="" /></a>
                                                 </div>
                                                 <div className="side-pro-content">
                                                     <div className="side-pro-rating">
@@ -92,7 +92,7 @@ export default function ProductList() {
                                                         <i className="fas fa-star"></i>
                                                         <i className="fas fa-star"></i>
                                                     </div>
-                                                    <h5><a href="#">Raglan Baseball-Style</a></h5>
+                                                    <h5><a href="_blank">Raglan Baseball-Style</a></h5>
                                                     <div className="side-pro-price">
                                                         <span>$119.00 USD</span>
                                                     </div>
@@ -100,7 +100,7 @@ export default function ProductList() {
                                             </li>
                                             <li>
                                                 <div className="side-pro-img">
-                                                    <a href="#"><img src="./assets/shop-rsp4.jpg" alt="" /></a>
+                                                    <a href="_blank"><img src="./assets/shop-rsp4.jpg" alt="" /></a>
                                                 </div>
                                                 <div className="side-pro-content">
                                                     <div className="side-pro-rating">
@@ -110,7 +110,7 @@ export default function ProductList() {
                                                         <i className="fas fa-star"></i>
                                                         <i className="fas fa-star"></i>
                                                     </div>
-                                                    <h5><a href="#">Raglan Baseball-Style</a></h5>
+                                                    <h5><a href="_blank">Raglan Baseball-Style</a></h5>
                                                     <div className="side-pro-price">
                                                         <span>$119.00 USD</span>
                                                     </div>
@@ -121,7 +121,7 @@ export default function ProductList() {
 
                                     <div className="shop-widget">
                                         <div className="shop-sidebar-banner">
-                                            <a href="#"><img src="./assets/shop-banner.jpg" alt="" /></a>
+                                            <a href="_blank"><img src="./assets/shop-banner.jpg" alt="" /></a>
                                         </div>
                                     </div>
                                 </div>
