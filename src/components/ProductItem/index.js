@@ -3,12 +3,12 @@ import React from "react";
 export default function ProductItem({name, price, shop_id, final_price, img_url, sendText}) {
     
     const sendTextToParent = () => {
-        const text = `${name}`;
-        const theURL = `${img_url}`;
-        const thePrice = `${price}`;
-        const theFinalPrice = `${final_price}`;
-        console.log(`ProductItem  ${text}`);
-        sendText(text, theURL, thePrice, theFinalPrice)
+        // const text = name;
+        // const theURL = img_url;
+        // const thePrice = price;
+        // const theFinalPrice = final_price;
+        console.log(`ProductItem  ${name}`);
+        sendText(name, img_url, price, final_price)
     };
     
     return (

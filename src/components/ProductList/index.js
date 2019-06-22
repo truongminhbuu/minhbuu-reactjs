@@ -53,7 +53,7 @@ export default function ProductList() {
                                                     <li>
                                                         <a href="./detail.html">Product Detail</a>
                                                     </li>
-                                                    <li>
+                                                    <li>npm
                                                         <a href="./login.html">login</a>
                                                     </li>
                                                     <li>
