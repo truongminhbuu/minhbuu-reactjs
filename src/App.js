@@ -18,9 +18,6 @@ function App() {
 
         <ProductList />
 
-        
-
-
         {/* <!-- footer start --> */}
         <Footer />
         {/* <!-- footer end --> */}
