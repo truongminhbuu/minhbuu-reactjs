@@ -1,12 +1,13 @@
 import React from 'react';
-export default function ProductItem() {
+
+export default function ProductItem({name, price, shop_id, img_url, final_price}) {
     return (
         <>
             <div className="col-xl-4 col-lg-6 col-md-6">
                 <div className="product-wrapper mb-50">
                     <div className="product-img mb-25">
                         <a href="#">
-                            <img src="./assets/pro2.jpg" alt="" />
+                            <img src={img_url} alt="" />
                             <img className="secondary-img" src="./assets/pro3.jpg" alt="" />
                         </a>
                         <div className="product-action text-center">
@@ -16,7 +17,6 @@ export default function ProductItem() {
                             <a href="#" title="Quick View">
                                 <i className="fas fa-search"></i>
                             </a>
-
                         </div>
                         <div className="sale-tag">
                             <span className="sale">sale</span>
@@ -24,15 +24,15 @@ export default function ProductItem() {
                     </div>
                     <div className="product-content pr-0">
                         <div className="pro-cat mb-10">
-                            <a href="#">furniture</a>
+                            <a href="#">{shop_id}</a>
                         </div>
                         <h4>
-                            <a href="#">Minimal Deco Furniture</a>
+                            <a href="#">{name}</a>
                         </h4>
                         <div className="product-meta">
                             <div className="pro-price">
-                                <span>$119.00 USD</span>
-                                <span className="old-price">$230.00 USD</span>
+                                <span>{final_price}</span>
+                                <span className="old-price">{price}</span>
                             </div>
                         </div>
                     </div>

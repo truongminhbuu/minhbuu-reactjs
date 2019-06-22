@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductItem from '../ProductItem';
+import result from '../../data.json';
 
 export default function ProductList() {
     return (
@@ -21,8 +22,9 @@ export default function ProductList() {
                                 {/* <!-- tab content --> */}
                                 <div className="tab-content" id="myTabContent">
                                     <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        <div className="row">
-                                                                                        
+                                        <div className="row" >  
+                                        {result.data.map(elm => <ProductItem name={elm.name} price={elm.price} 
+                                        shop_id={elm.shop_id} img_url={elm.img_url} final_price={elm.final_price}/>)}                                         
                                         </div>
                                     </div>
                                 </div>
@@ -39,7 +41,7 @@ export default function ProductList() {
                                     </div>
 
                                     {/* <div className="shop-widget">
-                      <h3 className="shop-title">Filter selection</h3>
+                      <h3 className="shop-title">Filter selmction</h3>
                       <div className="price-filter">
                         <div id="slider-range" className="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div className="ui-slider-range ui-corner-all ui-widget-header" style="left: 15%; width: 45%;" /></div><span tabindex="0" className="ui-slider-handle ui-corner-all ui-state-default" style="left: 15%;"></span><span tabindex="0" className="ui-slider-handle ui-corner-all ui-state-default" style="left: 60%;"></span></div>
                       <input type="text" id="amount" />
