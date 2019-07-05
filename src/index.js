@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import CartItem from './components/CartItem';
-import ProductList from './components/ProductList';
+import initFirebase from'./firebaseConfig'
 
+initFirebase()
 ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<ProductList />, document.getElementById('productlist'));
+
+
+//ReactDOM.render(<ProductList />, document.getElementById('productlist'));
 // ReactDOM.render(<CartItem />, document.getElementById('minicart'));
 
 

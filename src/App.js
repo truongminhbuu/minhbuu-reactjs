@@ -1,25 +1,38 @@
-import React from 'react';
+
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Headers from "./components/Headers"
 import ProductList from "./components/ProductList"
 import Footers from "./components/Footers"
+import Layout from './components/Layout';
+import RegisterForm from './components/RegisterForm';
+import LoginForm from'./components/LoginForm';
+
+import result from "./data.json";
+
 
 function App() {
   
+  const [itemInCart, setitemInCart] = useState([]) 
+  const sendText = (values) => itemInCart.push({...values});
+  console.log(itemInCart)
+  // itemInCart.push({values})
+  
   return (
-    <>
+    <Layout data={itemInCart}>
       {/* <!-- header start --> */}
-      
+      <ProductList {...result} sendText123={sendText}/>
+
       {/* <!-- header end --> */}
 
       {/* <!-- ProductList start --> */}
-      <div id="productlist"></div>
-      
+      {/* <div id="productlist"></div> */}
+      {/* <LoginForm /> */}
       {/* <!-- ProductList End --> */}
 
-      {/* <!-- footer start --> */}
-      <Footers />
+      {/* <!-- footer start --> */} 
+            {/* <Footers /> */}
       {/* <!-- footer end --> */}
 
       {/* <!-- Fullscreen search --> */}
@@ -37,7 +50,7 @@ function App() {
       </div>
       {/* <!-- end fullscreen search --> */}
 
-    </>
+    </ Layout>
   );
 }
 

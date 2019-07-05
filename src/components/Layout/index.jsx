@@ -1,3 +1,13 @@
 import React from 'react'
 import Footer from'../Footers'
-import Headder from'../Headers'
+import Headers from'../Headers'
+
+export default function Layout(props){
+    return(
+        <>
+        <Headers {...props} />
+            {props.children}
+        <Footer />
+        </>
+    )
+}
