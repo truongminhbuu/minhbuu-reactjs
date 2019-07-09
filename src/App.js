@@ -7,7 +7,7 @@ import ProductList from "./components/ProductList"
 import Footers from "./components/Footers"
 import Layout from './components/Layout';
 import RegisterForm from './components/RegisterForm';
-import LoginForm from'./components/LoginForm';
+import LoginForm from'./components/LoginForm/LoginForm.container';
 
 import result from "./data.json";
 
@@ -15,7 +15,9 @@ import result from "./data.json";
 function App() {
   
   const [itemInCart, setitemInCart] = useState([]) 
-  const sendText = (values) => itemInCart.push({...values});
+  const sendText = (values) =>{
+    setitemInCart(state=>[...state,values])
+  }
   console.log(itemInCart)
   // itemInCart.push({values})
   
